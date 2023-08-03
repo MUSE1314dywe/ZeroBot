@@ -168,10 +168,7 @@ func FullMatchRule(src ...string) Rule {
 	}
 }
 
-// OnlyToMe only triggered in conditions of @bot or begin with the nicknames
-func OnlyToMe(ctx *Ctx) bool {
-	return ctx.Event.IsToMe
-}
+
 
 // CheckUser only triggered by specific person
 func CheckUser(userId ...int64) Rule {
